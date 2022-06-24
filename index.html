@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanying Zhou</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/035a141c96.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body class="home" id="home">
+
+	<!-- Header -->
+
+	<header id="header"> 
+		<h3 class="text__logo">
+			Wanying Zhou
+		</h3>
+
+		<!-- logo img here -->
+	
+		<div class="logo">
+			<a href="index.html">
+			<img src="img/logo.svg" alt="">
+		</a>
+		</div>
+
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link"> Home </a></li>
+				<li class="nav__item"><a href="#work" class="nav__link"> Projects </a></li>
+				<li class="nav__item"><a href="#art" class="nav__link"> Digital Art </a></li>
+				<li class="nav__item"><a href="#contact" class="nav__link"> Contact Me </a></li>
+			</ul>
+		</nav>
+
+		<button class="nav__toggle" aria-label="toggle-nav">
+			<span class="hamburger"> </span>
+		</button>
+
+			
+	</header>
+
+	
+	<!-- Intro -->
+	
+	<section class="intro" id="intro">
+		<h1 class="section__title section__title--intro row_1">
+			Hi, awesome seeing you here.
+		</h1>
+		<h2 class="section__title section__title--intro row_2">
+			I love Computer Graphics, UI, and art.
+		</h2>
+		
+	</section>
+
+	<!-- My Work -->
+	<section class="work" id="work">
+		<h2 class="section__title section__title--work">
+			PROJECTS
+		</h2>
+
+		<div class="portfolio">
+
+			<a href="https://intellcur.com/" class="portfolio__item">
+				<img src="img/IntellCur_mono.png" alt="" class="portfolio__img-top">
+
+				<img src="img/IntellCur.png" alt="" class="portfolio__img-under">
+			
+				<p class="portfolio__text" >Design and Development of a responsive and user-friendly e-commerce website with Shopify</p>
+			</a>
+
+
+			<a href="index.html" class="portfolio__item">
+				<img src="img/web_mono_cut.png" alt="" class="portfolio__img-top">
+
+				<img src="img/web_cut.png" alt="" class="portfolio__img-under">
+
+				<p class="portfolio__text" >Design and Development of my current personal website</p>
+			</a>
+
+
+			<a  class="portfolio__item">
+				<img src="img/RT3_mono_cut.png" alt="" class="portfolio__img-top">
+
+				<p class="portfolio__text" >A ray-tracing application written in C++ and Lua, with 3D objects modeled in Blender</p>
+
+				<img src="img/RT3_cut.jpg" alt="" class="portfolio__img-under">
+			</a>
+
+
+			<a  class="portfolio__item">
+				<img src="img/RT2_auto_mono_cut.png" alt="" class="portfolio__img-top">
+
+				<p class="portfolio__text" >Physics simulation of burnt cloth in C++, built in my ray-tracing application</p>
+
+				<img src="img/RT2_auto_cut.jpg" alt="" class="portfolio__img-under">
+			</a>
+
+
+			<a href="https://github.com/w79zhou1995/julia_plot" class="portfolio__item">
+				<img src="img/penta_pink_mono_cut.png" alt="" class="portfolio__img-top">
+
+				<p class="portfolio__text" >MATLAB program that plots n-th order Julia sets with a color map</p>
+
+				<img src="img/penta_pink_cut.png" alt="" class="portfolio__img-under">
+			</a> 
+
+
+			<a href="https://github.com/w79zhou1995/fractals_in_pascal" class="portfolio__item">
+				<img src="img/Fig15_mono_cut.png" alt="" class="portfolio__img-top">
+
+				<p class="portfolio__text" >Study of fractal patterns in Pascal's triangle, with MATLAB code</p>
+
+				<img src="img/Fig15_cut.jpg" alt="" class="portfolio__img-under">
+			</a>
+
+		</div>
+	</section>
+
+	<!-- Art -->
+	<section class="art" id="art">
+		<h2 class="section__title section__title--art">
+			DIGITAL ART
+		</h2>
+
+		<div class="portfolio">
+			
+			<a href="paintings.html" class="portfolio__item" >
+				<img src="img/OnionSoup_cut.png" alt="" class="portfolio__img-top">
+
+				<!--<img src="img/OnionSoup_cover_cut.svg" alt="" class="portfolio__img-under">-->
+
+				<h2 class="portfolio__text-top" style="font-family: var(--ff-secondary);">PAINTING</h2>
+			</a> 
+
+			<a href="stickers.html" class="portfolio__item" >
+				<img src="img/GordonChicken_cut.png" alt="" class="portfolio__img-top">
+
+				<!--<img src="img/GordonChicken_cover_cut.svg" alt="" class="portfolio__img-under">-->
+
+				<h2 class="portfolio__text-top" style="font-family: var(--ff-secondary);">STICKERS</h2>
+			</a> 
+
+			<a href="wip.html" class="portfolio__item" >
+				<img src="img/Eggwash_cut.png" alt="" class="portfolio__img-top">
+
+				<!--<img src="img/Eggwash_cover_cut.svg" alt="" class="portfolio__img-under">-->
+
+				<h2 class="portfolio__text-top" style="font-family: var(--ff-secondary);">IN THE PIPELINE</h2>
+			</a>
+		</div>
+	</section>
+
+	<!-- Contacts -->
+	
+	<section class="contact-info" id="contact">
+		<h2 class="section__title section__title--contact">
+			Get in Touch
+		</h2>
+		<div class="contact">
+			<form onsubmit="sendEmail(); reset(); return false;">
+				<label class="custom__label"> Contact form currently under construction. Please email me directly. </label>
+				<label for="fname"> First Name </label>
+				<input type="text" id="fname" name="firstname" required>
+
+				<label for="lname"> Last Name </label>
+				<input type="text" id="lname" name="lastname" required>
+
+				<label for="email"> Email </label>
+				<input type="email" id="email" name="emailaddress" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="mesasage" style="height:150px" placeholder="Write something..."></textarea>
+
+				<input type="submit" value="Send">
+		</div>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			function sendEmail() {
+				Email.send({
+				    Host : "smtp-mail.outlook.com",
+				    Username : "w79zohu@outlook.com", 
+				    Password : password,
+				    To : 'w79zhou@outlook.com',
+				    From : document.getElementById("email").value,
+				    Subject : "New Contact Form Message",
+				    Body : "First Name: " +  document.getElementById("fname").value
+				    + "<br> Last Name: " + document.getElementById("lname").value
+				    + "<br> Message: " + document.getElementById("message").value
+				}).then(
+				  message => alert("Message Sent Successfully")
+				);
+			}
+
+		</script>
+	</section>
+
+	
+
+	<!-- Footer -->
+	<footer>
+		<ul class="social-media">
+			<li class="social-media__item">
+				<a class="social-media__link" href="mailto:w79zhou@outlook.com">
+					<i class="fa-solid fa-at" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://github.com/w79zhou1995">
+					<i class="fa-brands fa-github" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.artstation.com/wanyingzhou">
+					<i class="fa-brands fa-artstation" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.linkedin.com/in/wanying-zhou-064010241/">
+					<i class="fa-brands fa-linkedin" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.instagram.com/mikeyhas8nipples/">
+					<i class="fa-brands fa-instagram" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Paintings</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/035a141c96.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="paintings" id="paintings">
+
+<!-- Header -->
+
+	<header id="header"> 
+		<h3 class="text__logo">
+			Wanying Zhou
+		</h3>
+
+		<!-- logo img here 
+	
+		<div class="logo">
+			<a href="#">
+			<img src="img/logo.svg" alt="">
+		</a>
+		</div>
+		-->
+
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link"> Home </a></li>
+
+				<li class="nav__item"><a href="index.html#work" class="nav__link"> My Work </a></li>
+
+				<li class="nav__item"><a href="#contact" class="nav__link"> Digital Art </a></li>
+				
+				<li class="nav__item"><a href="index.html#contact" class="nav__link"> Contact Me </a></li>
+
+			</ul>
+		</nav>
+
+		<button class="nav__toggle" aria-label="toggle-nav">
+			<span class="hamburger"> </span>
+		</button>
+			
+	</header>
+
+	<section class="container">
+		<div class="panel" data-color="onion">
+			<img src="img/OnionSoup.png" class="panel__img">
+			<h1 class="panel__text">ONION SOUP</h1>
+		</div>
+
+		<div class="panel" data-color="mail">
+			<img src="img/Mail.png" class="panel__img">
+			<h1 class="panel__text" style="color: var(--clr-light);">Mail</h1>
+		</div>
+
+		<div class="panel" data-color="sea">
+			<h1 class="panel__text" style="color: var(--clr-background1);">UNDER THE SEA</h1>
+			<h3 class="panel__text" style="color: var(--clr-background1); padding-top: 8rem;">(COMING SOON)</h3>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<ul class="social-media">
+			<li class="social-media__item">
+				<a class="social-media__link" href="mailto:w79zhou@outlook.com">
+					<i class="fa-solid fa-at" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://github.com/w79zhou1995">
+					<i class="fa-brands fa-github" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="#">
+					<i class="fa-brands fa-artstation" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.linkedin.com/in/wanying-zhou-064010241/">
+					<i class="fa-brands fa-linkedin" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.instagram.com/mikeyhas8nipples/">
+					<i class="fa-brands fa-instagram" style="color: var(--clr-accent2)"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script >
+	$(window).scroll(function() {
+
+	var $window = $(window),
+		$body = $('body'),
+		$panel = $('.panel');
+
+	var scroll = $window.scrollTop() + ($window.height() / 1.5);
+
+	$panel.each(function () {
+	var $this = $(this);
+
+	if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+	$body.removeClass(function (index, css) {
+	return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+	});
+
+	$body.addClass('color-' + $(this).data('color'));
+	}
+	});    
+
+	}).scroll();
+	</script>
+
+	<script src="js/index.js"></script>
+
+
+</body>
+</html>

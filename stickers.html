@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stickers</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/035a141c96.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="stickers">
+
+<!-- Header -->
+
+	<header id="header"> 
+		<h3 class="text__logo">
+			Wanying Zhou
+		</h3>
+
+		<!-- logo img here 
+	
+		<div class="logo">
+			<a href="#">
+			<img src="img/logo.svg" alt="">
+		</a>
+		</div>
+		-->
+
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link"> Home </a></li>
+
+				<li class="nav__item"><a href="index.html#work" class="nav__link"> My Work </a></li>
+
+				<li class="nav__item"><a href="#contact" class="nav__link"> Digital Art </a></li>
+				
+				<li class="nav__item"><a href="index.html#contact" class="nav__link"> Contact Me </a></li>
+
+			</ul>
+		</nav>
+
+		<button class="nav__toggle" aria-label="toggle-nav">
+			<span class="hamburger"> </span>
+		</button>
+			
+	</header>
+
+
+	<section class="container marquee">
+		<div class="marquee__content marquee__content-first"> 
+			<ul class="marquee__items">
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregRamen.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregMushroom.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+			</ul>
+
+			
+
+			<ul class="marquee__items">
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregRamen.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregMushroom.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+<!--
+		<div class="marquee__content marquee__content-second"> 
+			<ul class="marquee__items">
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregRamen.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+			</ul>
+
+			<ul class="marquee__items">
+				<li class="marquee__img">
+					<a class="marquee__img__link" href="index.html">
+						<img id="stc_1" src="img/ChibiGregRamen.png" style="width: 300px; height: 300px;">
+					</a>
+				</li>
+			</ul>	
+		</div>
+	-->
+	</section>
+
+    <!--<canvas id="background" width="300" height="300">-->
+
+	<!-- Footer -->
+	<footer>
+		<ul class="social-media">
+			<li class="social-media__item">
+				<a class="social-media__link" href="mailto:w79zhou@outlook.com">
+					<i class="fa-solid fa-at" style="color: var(--clr-accent1)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://github.com/w79zhou1995">
+					<i class="fa-brands fa-github" style="color: var(--clr-accent1)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="#">
+					<i class="fa-brands fa-artstation" style="color: var(--clr-accent1)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.linkedin.com/in/wanying-zhou-064010241/">
+					<i class="fa-brands fa-linkedin" style="color: var(--clr-accent1)"></i>
+				</a>
+			</li>
+
+			<li class="social-media__item">
+				<a class="social-media__link" href="https://www.instagram.com/mikeyhas8nipples/">
+					<i class="fa-brands fa-instagram" style="color: var(--clr-accent1)"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+<!--
+	<script>
+		var canvas = document.getElementById("background");
+		var context = canvas.getContext("2d");
+
+		  var unit = 16;
+		  var count = 0;
+
+		  var img = document.getElementById("stc_1");
+		  var stc = new component (30, 30, "img/ChibiGregRamen.png", 10, 10, "image");
+
+		  function component (width, height, color, x, y, type) {
+		  	this.type = type;
+		  	if (type == "image") {
+        		this.image = new Image();
+        		this.image.src = color;
+    		}
+
+    		this.width = width;
+    		this.height = height;
+
+    		this.x = x;
+    		this.y = y;
+
+    		this.dx = unit;
+    		this.dy = 0;
+		  }
+
+
+
+
+		  function loop() {
+		  	requestAnimationFrame(loop);
+
+		  	context.clearRect(0, 0, canvas.width, canvas.height);
+		  }
+</script>-->
+
+	<script src="js/index.js"></script>
+
+
+</body>
+</html>
